@@ -1,0 +1,8 @@
+#! /bin/bash
+
+set -e
+
+ln -sf /usr/src/deps/node_modules /usr/src/app/node_modules
+ln -sf /usr/src/deps/bower_components /usr/src/app/bower_components
+
+exec "$@"
